@@ -1,5 +1,5 @@
 # NameSorter
-This is a name sorter application. This application takes a text containing names as a ***command-line argument***, orders the names by last name followed by first name. The input to the application is a command-line argument - which a text file (text file must be in src/main/resources)  
+This is a name sorter application. This application takes a text file containing names as a ***command-line argument***, orders the names by last name followed by first name. The input to the application is a command-line argument - which a text file (text file must be in src/main/resources)  
 
 
 ### Before you run
