@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FileOperationsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-01-19T23:49:21" hostname="DESKTOP-9AVJG64" time="0.022">
+  <properties/>
+  <testcase name="testSetInputFileTest" classname="FileOperationsTest" time="0.009"/>
+  <testcase name="testInputFileEmpty" classname="FileOperationsTest" time="0.001"/>
+  <testcase name="testMissingName" classname="FileOperationsTest" time="0.006"/>
+  <testcase name="testReadInputFileFunctionality" classname="FileOperationsTest" time="0.005"/>
+  <testcase name="testGetInputFileTest" classname="FileOperationsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

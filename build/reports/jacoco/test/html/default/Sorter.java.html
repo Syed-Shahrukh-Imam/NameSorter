@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Sorter.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">NameSorter</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Sorter.java</span></div><h1>Sorter.java</h1><pre class="source lang-java linenums">import java.util.ArrayList;
+import java.util.Comparator;
+
+<span class="fc" id="L4">public class Sorter{</span>
+    /**
+     * This method is used to sort the names.
+     * @param nameToBeSort - Array List to be sorted
+     * @return Sorted Array List
+     */
+    public ArrayList&lt;Name&gt; sortNames (ArrayList&lt;Name&gt; nameToBeSort ){
+<span class="fc bfc" id="L11" title="All 2 branches covered.">        if(nameToBeSort == null){</span>
+<span class="fc" id="L12">            throw new IllegalArgumentException(&quot;Parsed array cannot be null.&quot;);</span>
+        }
+<span class="fc" id="L14">        nameToBeSort.sort(new Comparator&lt;Name&gt;() {</span>
+            @Override
+            public int compare(Name o1, Name o2) {
+<span class="fc" id="L17">                return o1.getLastName().compareTo(o2.getLastName()); // Comparision</span>
+            }
+        });
+<span class="fc" id="L20">        return nameToBeSort;</span>
+    }
+
+    public static void main(String[] args) {
+<span class="nc" id="L24">        String inputFile = args[0];</span>
+<span class="nc" id="L25">        FileOperations fileOperations = new FileOperations(inputFile);</span>
+<span class="nc" id="L26">        Sorter sorter = new Sorter();</span>
+<span class="nc" id="L27">        ArrayList&lt;Name&gt; names2 = sorter.sortNames(fileOperations.readInputFile());</span>
+<span class="nc" id="L28">        fileOperations.generateOutputFile(names2);</span>
+<span class="nc" id="L29">     }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
