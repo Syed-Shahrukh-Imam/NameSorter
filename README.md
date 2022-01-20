@@ -3,7 +3,8 @@ This is a name sorter application. This application takes a text containing name
 
 
 ### Before you run
-Please add the names text file under **src/main/resources/**
+- Please add the names text file under **src/main/resources/**. 
+- Gradle can be installed from https://gradle.org/install/
 
 ### Instructions to run
 - Clone the repository using `git clone`
