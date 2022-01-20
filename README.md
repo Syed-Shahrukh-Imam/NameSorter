@@ -1,5 +1,5 @@
 # NameSorter
-This is a name sorter application. This application takes a text containing names as a command-line argument, orders the names by last name followed by first name. 
+This is a name sorter application. This application takes a text containing names as a ***command-line argument***, orders the names by last name followed by first name. 
 
 
 ### Before you run
