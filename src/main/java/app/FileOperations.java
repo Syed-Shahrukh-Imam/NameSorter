@@ -1,3 +1,5 @@
+package app;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -25,7 +27,7 @@ public class FileOperations {
 
     /**
      * Reads the inputFile and returns the user name contents in an Array List.
-     * @return ArrayList<Name>
+     * @return ArrayList<app.Name>
      */
     public ArrayList<Name> readInputFile(){
         try{
@@ -38,7 +40,7 @@ public class FileOperations {
                     // Missing first or last name
                     throw new IllegalStateException("Missing first or last name in input file");
                 }
-                Name name = new Name(str[1].strip(), str[0].strip());
+                Name name = new Name(str[1].trim(), str[0].trim());
                 names.add(name);
             }
             reader.close();

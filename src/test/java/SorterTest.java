@@ -1,3 +1,5 @@
+import app.Name;
+import app.Sorter;
 import org.junit.Before;
 import org.junit.Test;
 

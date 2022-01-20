@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\NameSorter-1.0-SNAPSHOT.jar;%APP_HOME%\lib\junit-ju
 
 
 @rem Execute NameSorter
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %NAME_SORTER_OPTS%  -classpath "%CLASSPATH%"  %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %NAME_SORTER_OPTS%  -classpath "%CLASSPATH%" app.Sorter %*
 
 :end
 @rem End local scope for the variables with windows NT shell

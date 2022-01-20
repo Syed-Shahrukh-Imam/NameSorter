@@ -1,5 +1,7 @@
+package app;
+
 /**
- * This is the Name class, that holds the first and the last name extracted from the file.
+ * This is the app.Name class, that holds the first and the last name extracted from the file.
  */
 public class Name {
 

@@ -9,7 +9,7 @@ Please add the names text file under **src/main/resources/**
 - Clone the repository using `git clone`
 - Head to the directory in your local machine and run `gradle build`. This builds the application and the fetches the dependencies. 
 - Change directory to `cd src/main/java/`
-- Run `javac Sorter.java` to compile the Sorter.java file.
-- Run `java Sorter << your text file name >>`
+- Run `javac app.Sorter.java` to compile the app.Sorter.java file.
+- Run `java app.Sorter << your text file name >>`
 
 

@@ -21,3 +21,4 @@ dependencies {
 test {
     finalizedBy jacocoTestReport
 }
+mainClassName = "app.Sorter"
